@@ -1,10 +1,9 @@
-import './App.css';
+import React from 'react';
+import MusicContainer from './containers/MusicContainer';
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+      <MusicContainer/>
   );
 }
 
