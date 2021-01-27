@@ -1,10 +1,15 @@
 import React from 'react';
 import './MusicItem.css';
 
-const MusicItem = () => {
+const MusicItem = ({song, key }) => {
 
     return (
-        <p>This is an individual song</p>
+        <>
+        <h2>Chart Position: {song.category.attributes["im:id"]}</h2>
+        <h2>Song Title: {song.["im:name"].label}</h2>
+        <h3>Artist: {song.["im:artist"].label}</h3>
+
+        </>
     )
 }
 
