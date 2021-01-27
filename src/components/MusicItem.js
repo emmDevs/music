@@ -5,9 +5,13 @@ const MusicItem = ({song, key }) => {
 
     return (
         <>
-        <h2>Chart Position: {song.category.attributes["im:id"]}</h2>
-        <h2>Song Title: {song.["im:name"].label}</h2>
-        <h3>Artist: {song.["im:artist"].label}</h3>
+        <br/>
+        <h3>Chart Position: {song.category.attributes["im:id"]}</h3>
+        <p><b>Song Title:</b> {song.["im:name"].label}</p>
+        <p><b>Artist:</b> {song.["im:artist"].label}</p>
+        <br/>
+        <hr className="musicitem_hr"/>
+        <br/>
 
         </>
     )

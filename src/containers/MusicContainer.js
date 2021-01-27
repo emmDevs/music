@@ -21,10 +21,11 @@ const MusicContainer = () => {
     }
 
     return(
-        <>
+        <div className="music_container">
             <h1>Current UK Top 20 Singles</h1>
+            <hr className="music_hr"/>
             <MusicList songs={songs} loaded={loaded}/>
-        </>
+        </div>
     )
 }
 
